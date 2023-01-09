@@ -38,6 +38,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.4.1
         with:
-          target_branch: gh-pages
-          build_dir: ./dist
-          ssh-key: ${{ secrets.Example }}
+          branch: gh-pages
+          folder: dist
+          token: ${{ secrets.Example }}
