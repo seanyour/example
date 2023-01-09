@@ -13,6 +13,6 @@ jobs:
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.4.1
-        env:
+        with:
           ssh-key: ${{ secrets.Example }}
-          folder: build
+          folder: dist
