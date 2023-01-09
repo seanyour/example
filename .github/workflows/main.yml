@@ -40,5 +40,4 @@ jobs:
         with:
           target_branch: gh-pages
           build_dir: ./dist
-          env:
-            GITHUB_TOKEN: ${{ secrets.Example }}
+          ssh-key: ${{ secrets.Example }}
