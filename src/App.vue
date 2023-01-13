@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 import { RouterView } from 'vue-router'
 </script>
 
@@ -6,6 +7,9 @@ import { RouterView } from 'vue-router'
   <RouterView />
 </template>
 
-<style scoped>
-
+<style>
+#app {
+  width: 100%;
+  height: 100%;
+}
 </style>
