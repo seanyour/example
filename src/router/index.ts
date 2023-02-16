@@ -5,7 +5,7 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
-      path: '/example/',
+      path: '/',
       name: 'home',
       component: Home,
       children: [
@@ -13,14 +13,19 @@ const router = createRouter({
       ]
     },
     {
-      path: '/example/swiper',
+      path: '/swiper',
       name: 'swiper',
       component: () => import("@/views/Swiper.vue")
     },
     {
-      path: '/example/confetti',
+      path: '/confetti',
       name: 'confetti',
       component: () => import("@/views/CanvasConfetti.vue")
+    },
+
+    {
+      path: '/template',
+      component: () => import("views/Template/index.vue")
     },
 
     {

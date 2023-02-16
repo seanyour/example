@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 import {resolve} from "path";
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
-import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers';
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import Unocss from 'unocss/vite';
 import { presetUno, presetAttributify, presetIcons } from 'unocss';
 import Icons from 'unplugin-icons/vite';
@@ -24,12 +24,12 @@ export default defineConfig({
       }),
       AutoImport({
         resolvers: [
-            AntDesignVueResolver()
+            ElementPlusResolver()
         ]
       }),
       Components({
         resolvers: [
-            AntDesignVueResolver(),
+            ElementPlusResolver(),
             IconsResolver(),
         ]
       }),
@@ -46,6 +46,7 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
       'assets': pathResolve('./src/assets'),
+      'lang': pathResolve('./src/lang'),
       'components': pathResolve('./src/components'),
       'router': pathResolve('./src/router'),
       'stores': pathResolve('./src/stores'),

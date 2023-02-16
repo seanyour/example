@@ -7,17 +7,19 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    AAvatar: typeof import('ant-design-vue/es')['Avatar']
     AButton: typeof import('ant-design-vue/es')['Button']
-    AInput: typeof import('ant-design-vue/es')['Input']
     AInputNumber: typeof import('ant-design-vue/es')['InputNumber']
-    AList: typeof import('ant-design-vue/es')['List']
-    AListItem: typeof import('ant-design-vue/es')['ListItem']
-    AListItemMeta: typeof import('ant-design-vue/es')['ListItemMeta']
-    APagination: typeof import('ant-design-vue/es')['Pagination']
     AResult: typeof import('ant-design-vue/es')['Result']
-    ATable: typeof import('ant-design-vue/es')['Table']
     BackHome: typeof import('./src/components/BackHome.vue')['default']
+    ElButton: typeof import('element-plus/es')['ElButton']
+    ElDropdown: typeof import('element-plus/es')['ElDropdown']
+    ElDropdownItem: typeof import('element-plus/es')['ElDropdownItem']
+    ElDropdownMenu: typeof import('element-plus/es')['ElDropdownMenu']
+    ElIcon: typeof import('element-plus/es')['ElIcon']
+    ElInputNumber: typeof import('element-plus/es')['ElInputNumber']
+    ElResult: typeof import('element-plus/es')['ElResult']
+    Language: typeof import('./src/components/Language/index.vue')['default']
+    NotFound: typeof import('./src/components/NotFound.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }

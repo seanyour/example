@@ -1,5 +1,5 @@
 <template>
-    <div class="i-ant-design-left-outlined text-xl cursor-pointer" @click="router.push('/example')"></div>
+    <div class="i-ant-design-left-outlined text-xl cursor-pointer" @click="router.push('/')"></div>
 </template>
 
 <script setup lang="ts">

@@ -9,10 +9,10 @@
 
             <div m="l-20px">
                 <span>Snow：</span>
-                <a-input-number v-model:value="snowTime" placeholder="Time" :min="1" @change="snow" />
+                <el-input-number v-model:value="snowTime" placeholder="Time" :min="1" @change="snow" />
             </div>
 
-            <a-button type="text" @click="salute">Salute</a-button>
+            <el-button type="text" @click="salute">Salute</el-button>
         </div>
     </div>
 </template>
