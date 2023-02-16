@@ -1,3 +1,3 @@
 export default  {
-    home: '首页'
+    'Switch Language Success': '切换语言成功'
 }

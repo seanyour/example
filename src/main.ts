@@ -4,8 +4,10 @@ import App from './App.vue';
 import router from './router';
 import i18n from "lang/index";
 
+import 'element-plus/es/components/message/style/css'
 import 'normalize.css';
 import 'uno.css';
+
 
 const app = createApp(App)
 

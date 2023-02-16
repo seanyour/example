@@ -1,3 +1,3 @@
 export default {
-    home: 'home'
+    'Switch Language Success': 'Switch Language Success'
 }

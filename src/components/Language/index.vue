@@ -14,8 +14,9 @@
 
 <script setup lang="ts">
 import {useI18n} from "vue-i18n";
+import {ElMessage} from "element-plus";
 
-const {locale} = useI18n();
+const {t,locale} = useI18n();
 function switchLanguage(command: string){
   switch (command) {
     case "en":
@@ -24,7 +25,12 @@ function switchLanguage(command: string){
     case 'cn':
       locale.value = 'cn';
       break;
-  }
+  };
+
+  ElMessage({
+    type: 'success',
+    message: t('Switch Language Success')
+  })
 };
 
 
