@@ -1,15 +1,20 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import {createRouter, createWebHashHistory} from 'vue-router';
 import Home from "views/Home.vue";
+import Layout from "components/Layout/index.vue";
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home,
+      component: Layout,
+      redirect: '/dashboard',
       children: [
-
+        {
+          path: 'dashboard',
+          component: () => import("views/Dashboard/index.vue"),
+          meta: {title: 'dashboard'}
+        }
       ]
     },
     {
@@ -25,7 +30,7 @@ const router = createRouter({
 
     {
       path: '/:pathMatch(.*)*',
-      component: () => import("views/NotFound.vue")
+      component: () => import("components/NotFound/index.vue")
     }
 
   ]

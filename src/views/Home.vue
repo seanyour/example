@@ -1,8 +1,4 @@
 <template>
-  <div>
-      <Language/>
-  </div>
-
   <RouterView/>
 </template>
 
