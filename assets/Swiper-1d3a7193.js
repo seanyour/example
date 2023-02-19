@@ -1,0 +1,1 @@
+import{_ as e}from"./BackHome.vue_vue_type_script_setup_true_lang-0a2d3b2f.js";import{d as a,k as r,J as t,b as o,F as s,o as n}from"./index-6f6b93fa.js";const f=a({__name:"Swiper",setup(c){return(_,m)=>(n(),r(s,null,[t(e),o(" swiper ")],64))}});export{f as default};
