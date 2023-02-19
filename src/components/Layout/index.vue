@@ -1,16 +1,12 @@
 <template>
-  <div class="common-layout">
-    <div class="flex flex-1">
-      <Aside/>
-      <el-container>
-        <el-header>
-          <Header/>
-        </el-header>
-        <el-main>
-          <RouterView/>
-        </el-main>
-      </el-container>
-    </div>
+  <div class="flex w-100% h-100%">
+    <Aside/>
+    <main class="w-100%">
+      <Header class="w-100%"/>
+      <div class="content w-100%">
+        <RouterView/>
+      </div>
+    </main>
   </div>
 </template>
 
@@ -18,5 +14,8 @@
 </script>
 
 <style scoped>
-
+.content {
+  min-height: calc(100vh - 50px);
+  box-sizing: border-box;
+}
 </style>

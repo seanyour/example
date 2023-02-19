@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang="ts">
-import Language from 'components/Language/index.vue'
+import Language from 'components/Language/Language.vue'
 import {useI18n} from "vue-i18n";
 
 const {t,locale} = useI18n();

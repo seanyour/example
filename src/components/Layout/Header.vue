@@ -1,9 +1,9 @@
 <template>
-  <div class="flex items-center">
-    <Expand/>
+  <nav class="h-50px flex items-center shadow">
+    <Expand class="px-15px"/>
 
     <Breadcrumb/>
-  </div>
+  </nav>
 </template>
 
 <script setup lang="ts">
