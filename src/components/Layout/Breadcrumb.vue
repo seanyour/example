@@ -32,7 +32,7 @@ function getBreadcrumb(){
   let matched = route.matched.filter(el => el.meta && el.meta.title);
 
   if (!isDashboard(matched[0])){
-    matched = [{ path: '/dashboard', meta: { title: 'dashboard' }}].concat(matched);
+    matched = ([{path: '/dashboard', meta: {title: 'dashboard'}}] as unknown as RouteLocationMatched[]).concat(matched);
   }
 
   breadcrumbList = matched.filter(item => item.meta && item.meta.title && item.meta.breadcrumb !== false);
