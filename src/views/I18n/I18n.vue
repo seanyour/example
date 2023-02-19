@@ -8,7 +8,7 @@
       </template>
 
       <el-radio-group v-model="radio" @change="switchLanguage">
-        <el-radio v-for="(item,index) in language" :key="I18n" :label="item.value">{{ item.name }}</el-radio>
+        <el-radio v-for="(item,index) in language" :key="index" :label="item.value">{{ item.name }}</el-radio>
       </el-radio-group>
     </el-card>
   </div>
