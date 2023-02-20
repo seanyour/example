@@ -5,6 +5,7 @@ export default {
         'theme': 'Theme',
         'i18n': 'I18n',
         'guide': 'Guide',
+        'clipboard': 'Clipboard',
     },
     'switch language': 'Switch Language',
     'back home': 'Back Home',

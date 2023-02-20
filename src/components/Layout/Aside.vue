@@ -8,6 +8,10 @@
       <div class="i-ic-outline-dashboard text-xl px-10px"></div>
       <template #title>{{ t("route.dashboard") }}</template>
     </el-menu-item>
+    <el-menu-item index="/clipboard">
+      <div class="i-mdi-clipboard-check-multiple-outline text-xl px-10px"></div>
+      <template #title>{{ t("route.clipboard") }}</template>
+    </el-menu-item>
     <el-menu-item index="/guide">
       <div class="i-ep-guide text-xl px-10px"></div>
       <template #title>{{ t("route.guide") }}</template>

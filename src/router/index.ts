@@ -17,6 +17,12 @@ const router = createRouter({
           component: () => import("views/Dashboard/Dashboard.vue"),
         },
         {
+          path: 'clipboard',
+          name: 'Clipboard',
+          meta: {title: 'clipboard'},
+          component: () => import("views/Clipboard/Clipboard.vue"),
+        },
+        {
           path: 'guide',
           name: 'Guide',
           meta: {title: 'guide'},

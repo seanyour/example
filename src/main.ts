@@ -8,8 +8,7 @@ import 'element-plus/es/components/message/style/css'
 import 'normalize.css';
 import 'uno.css';
 
-
-const app = createApp(App)
+const app = createApp(App);
 
 app.use(createPinia())
 app.use(router)

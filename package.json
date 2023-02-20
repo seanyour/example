@@ -12,6 +12,7 @@
   "dependencies": {
     "@types/canvas-confetti": "^1.6.0",
     "canvas-confetti": "^1.6.0",
+    "clipboard": "^2.0.11",
     "element-plus": "^2.2.30",
     "nanoid": "^4.0.0",
     "pinia": "^2.0.28",
