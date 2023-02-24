@@ -50,6 +50,7 @@ const init = {
   language: 'zh-Hans',
   skin_url: 'tinymce/skins/ui/oxide',
   content_css: 'tinymce/skins/content/default/content.min.css',
+  emoticons_database_url: 'tinymce/plugins/emoticons/js/emojis.min.js',
   promotion: false, // 去掉upgrade
   branding: false, // 去掉tinymce
   plugins: props.plugins,
