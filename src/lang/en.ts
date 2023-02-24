@@ -6,6 +6,8 @@ export default {
         'i18n': 'I18n',
         'guide': 'Guide',
         'clipboard': 'Clipboard',
+        'components': 'Components',
+        'tinymce': 'Tinymce',
     },
     'switch language': 'Switch Language',
     'back home': 'Back Home',

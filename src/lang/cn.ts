@@ -6,6 +6,8 @@ export default  {
         'i18n': 'i18n',
         'guide': '引导页',
         'clipboard': '剪贴板',
+        'components': '组件',
+        'tinymce': 'Tinymce',
     },
     'switch language': '更换语言',
     'back home': '返回首页',

@@ -8,6 +8,16 @@
       <div class="i-ic-outline-dashboard text-xl px-10px"></div>
       <template #title>{{ t("route.dashboard") }}</template>
     </el-menu-item>
+    <el-sub-menu index="">
+      <template #title>
+        <div class="i-icon-park-outline-components text-xl px-10px"></div>
+        <span>{{t("route.components")}}</span>
+      </template>
+      <el-menu-item index="/components/tinymce">
+        <div class="i-icon-park-editor text-xl px-10px"></div>
+        <template #title>{{t("route.tinymce")}}</template>
+      </el-menu-item>
+    </el-sub-menu>
     <el-menu-item index="/clipboard">
       <div class="i-mdi-clipboard-check-multiple-outline text-xl px-10px"></div>
       <template #title>{{ t("route.clipboard") }}</template>
