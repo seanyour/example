@@ -1,1 +1,0 @@
-import{d as t,o as n,k as s,a as r,ao as a}from"./index-6f6b93fa.js";const l=t({__name:"BackHome",setup(u){const o=a();return(c,e)=>(n(),s("div",{class:"i-ant-design-left-outlined text-xl cursor-pointer",onClick:e[0]||(e[0]=i=>r(o).push("/"))}))}});export{l as _};
