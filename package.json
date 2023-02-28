@@ -14,6 +14,8 @@
     "canvas-confetti": "^1.6.0",
     "clipboard": "^2.0.11",
     "element-plus": "^2.2.30",
+    "jsoneditor": "^9.10.0",
+    "monaco-editor": "^0.36.0",
     "nanoid": "^4.0.0",
     "pinia": "^2.0.28",
     "sass": "^1.58.3",
@@ -25,6 +27,7 @@
   },
   "devDependencies": {
     "@iconify/json": "^2.2.5",
+    "@types/jsoneditor": "^9.9.0",
     "@types/node": "^18.11.18",
     "@vitejs/plugin-vue": "^4.0.0",
     "@vue/tsconfig": "^0.1.3",

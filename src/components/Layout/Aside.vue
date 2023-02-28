@@ -1,39 +1,9 @@
 <template>
   <el-menu
       :default-active="activeRoute"
-      router
       :collapse="isCollapse"
   >
-    <el-menu-item index="/dashboard">
-      <div class="i-ic-outline-dashboard text-xl px-10px"></div>
-      <template #title>{{ t("route.dashboard") }}</template>
-    </el-menu-item>
-    <el-sub-menu index="">
-      <template #title>
-        <div class="i-icon-park-outline-components text-xl px-10px"></div>
-        <span>{{t("route.components")}}</span>
-      </template>
-      <el-menu-item index="/components/tinymce">
-        <div class="i-icon-park-editor text-xl px-10px"></div>
-        <template #title>{{t("route.tinymce")}}</template>
-      </el-menu-item>
-    </el-sub-menu>
-    <el-menu-item index="/clipboard">
-      <div class="i-mdi-clipboard-check-multiple-outline text-xl px-10px"></div>
-      <template #title>{{ t("route.clipboard") }}</template>
-    </el-menu-item>
-    <el-menu-item index="/guide">
-      <div class="i-ep-guide text-xl px-10px"></div>
-      <template #title>{{ t("route.guide") }}</template>
-    </el-menu-item>
-    <el-menu-item index="/theme">
-      <div class="i-icon-park-outline-theme text-xl px-10px"></div>
-      <template #title>{{ t("route.theme") }}</template>
-    </el-menu-item>
-    <el-menu-item index="/i18n">
-      <div class="i-ion-earth text-xl px-10px"></div>
-      <template #title>{{ t("route.i18n") }}</template>
-    </el-menu-item>
+      <AsideItem v-for="route in router.options.routes[0].children" :key="route.path" :route="route"/>
   </el-menu>
 </template>
 
@@ -42,8 +12,8 @@
 import {useI18n} from "vue-i18n";
 import {useAppStores} from "stores/app";
 import {storeToRefs} from "pinia";
-import {useRoute} from "vue-router";
-import {watch} from "vue";
+import {type RouteRecordName, useRoute, useRouter} from "vue-router";
+import {watch, onMounted} from "vue";
 import {$ref} from "vue/macros";
 
 const {t} = useI18n();
@@ -51,12 +21,13 @@ const {t} = useI18n();
 const app = useAppStores();
 const {isCollapse} = storeToRefs(app);
 const route = useRoute();
-let activeRoute = $ref("/dashboard")
+const router = useRouter();
+let activeRoute: RouteRecordName = $ref("Dashboard");
 
 watch(
     route,
     () => {
-      activeRoute = route.path;
+      activeRoute = route.name!;
     },
     {
       deep: true,

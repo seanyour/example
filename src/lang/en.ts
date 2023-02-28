@@ -1,13 +1,14 @@
 export default {
     'Switch Language Success': 'Switch Language Success',
     route: {
-        'dashboard': 'Dashboard',
-        'theme': 'Theme',
-        'i18n': 'I18n',
-        'guide': 'Guide',
         'clipboard': 'Clipboard',
         'components': 'Components',
+        'dashboard': 'Dashboard',
+        'i18n': 'I18n',
+        'json': 'Json',
+        'theme': 'Theme',
         'tinymce': 'Tinymce',
+        'guide': 'Guide',
     },
     'switch language': 'Switch Language',
     'back home': 'Back Home',

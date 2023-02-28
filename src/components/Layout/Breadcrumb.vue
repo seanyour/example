@@ -39,7 +39,6 @@ function getBreadcrumb(){
 };
 
 function isDashboard(route: any){
-  console.log(route)
   const name = route && route.name;
   if (!name){
     return false;

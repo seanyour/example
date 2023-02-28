@@ -42,6 +42,7 @@ function insert(){
   app.$patch((state) => {
     state.insertCodeDialogVisible = false;
   });
+  code = "";
 }
 </script>
 

@@ -11,7 +11,7 @@
       "router/*": ["./src/router/*"],
       "stores/*": ["./src/stores/*"],
       "views/*": ["./src/views/*"],
-    }
+    },
   },
 
   "references": [

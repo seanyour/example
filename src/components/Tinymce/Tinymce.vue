@@ -8,7 +8,6 @@ import {onMounted, onUnmounted, toRefs, watch} from "vue";
 
 import {pluginsOptions} from './plugins';
 import {useAppStores} from "stores/app";
-import {state} from "vue-tsc/out/shared";
 
 const props = defineProps({
   modelValue: {

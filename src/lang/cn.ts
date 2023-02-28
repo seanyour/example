@@ -8,6 +8,7 @@ export default  {
         'clipboard': '剪贴板',
         'components': '组件',
         'tinymce': 'Tinymce',
+        'json': 'Json'
     },
     'switch language': '更换语言',
     'back home': '返回首页',
