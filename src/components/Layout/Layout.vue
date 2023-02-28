@@ -11,7 +11,6 @@
 </template>
 
 <script setup lang="ts">
-import {ref, watch} from "vue";
 import {useAppStores} from "stores/app";
 import {storeToRefs} from "pinia";
 
