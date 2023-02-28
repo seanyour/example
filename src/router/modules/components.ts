@@ -1,3 +1,4 @@
+// @unocss-include
 export default {
     path: 'components',
     name: 'Components',

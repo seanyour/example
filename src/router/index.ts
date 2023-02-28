@@ -1,3 +1,4 @@
+// @unocss-include
 import {createRouter, createWebHashHistory} from 'vue-router';
 import Layout from "components/Layout/Layout.vue";
 import components from "router/modules/components";
