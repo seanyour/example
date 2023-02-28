@@ -4,8 +4,7 @@
 
 <script setup lang="ts">
 import * as monaco from 'monaco-editor';
-import {onMounted} from "vue";
-import {$ref} from "vue/macros";
+import {onMounted, ref} from "vue";
 import editorWorker from 'monaco-editor/esm/vs/editor/editor.worker?worker'
 import jsonWorker from 'monaco-editor/esm/vs/language/json/json.worker?worker'
 import cssWorker from 'monaco-editor/esm/vs/language/css/css.worker?worker'
@@ -53,19 +52,18 @@ const props = defineProps({
 
 const emits = defineEmits(['update:modelValue'])
 
-const monacoEditor: HTMLElement = $ref();
+const monacoEditor = ref();
 
 
 onMounted(() => {
   const  editor = monaco.editor.create(
-      monacoEditor,
+      monacoEditor.value,
       {
         value: props.modelValue,
         language: props.language,
         theme: props.theme,
-        selectOnLineNumbers: true,
-        renderSideBySide: false,
         readOnly: props.readonly,
+        selectOnLineNumbers: true,
       }
   );
 
